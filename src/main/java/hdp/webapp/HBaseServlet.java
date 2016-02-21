@@ -43,7 +43,7 @@ public class HBaseServlet extends HttpServlet implements Servlet {
         config.set("zookeeper.znode.parent", "/hbase-secure");
 
         UserGroupInformation.setConfiguration(config);
-        UserGroupInformation.loginUserFromKeytab("tomcat@MYCORP.NET", "/etc/tomcat/tomcat.keytab");
+        //UserGroupInformation.loginUserFromKeytab("tomcat@MYCORP.NET", "/etc/tomcat/tomcat.keytab");
 
         Connection conn = ConnectionFactory.createConnection(config);
         Admin adm = conn.getAdmin();

@@ -25,6 +25,10 @@
         <servlet-name>HiveJdbcServlet</servlet-name>
         <servlet-class>hdp.webapp.HiveJdbcServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>KafkaServlet</servlet-name>
+        <servlet-class>hdp.webapp.KafkaServlet</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>WebHdfsServlet</servlet-name>
@@ -45,6 +49,10 @@
     <servlet-mapping>
         <servlet-name>HiveJdbcServlet</servlet-name>
         <url-pattern>/hive-jdbc</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>KafkaServlet</servlet-name>
+        <url-pattern>/kafka</url-pattern>
     </servlet-mapping>
 
 </web-app>
